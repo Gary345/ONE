@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<h1>Calcular promedio de la familia </h1>
+
+<script>
+
+	function saltarLinea() {
+		document.write("<br>");	
+		document.write("<br>");	
+		document.write("<br>");	
+	}  
+function imprimir(frase) {
+		document.write(frase);
+		saltarLinea();
+	}
+    var Nm = parseInt(prompt("Ingrese la cantidad de miembros de tu familia"));
+    var x=1;
+    var totaledades = 0;
+    while (x<=Nm) {
+        
+    edad = parseInt(prompt("Ingrese la edad del familiar"));
+    totaledades=(totaledades + edad);
+    x=x+1
+
+ }
+ Pm=(totaledades/Nm);
+imprimir("La media de las edades de la familia es "+Pm)
+
+</script>
